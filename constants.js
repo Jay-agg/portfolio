@@ -83,8 +83,6 @@ export const SKILLS = {
     "webpack",
     "vite",
     "firebase",
-    "figma",
-    "tanstack-query",
   ],
   librariesAndFrameworks: [
     "react",
@@ -92,8 +90,6 @@ export const SKILLS = {
     "nextjs",
     "tailwindcss",
     "styledcomponents",
-    "antdesign",
-    "chakra-ui",
   ],
   databases: ["mysql", "mongodb"],
   other: ["git", "sanity-io"],
