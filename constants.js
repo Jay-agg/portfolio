@@ -3,7 +3,7 @@ export const METADATA = {
   title: "Portfolio | Jayant Aggarwal",
   description:
     "Jayant Aggarwal is a passionate Frontend Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
-  siteUrl: "https://www.shubhporwal.me/",
+  siteUrl: "https://jayantaggarwal.vercel.app/",
   twitterHandle: "@jayantftx",
   keywords: [
     "Jayant Aggarwal",
