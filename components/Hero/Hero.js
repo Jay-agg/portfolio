@@ -96,11 +96,11 @@ const Hero = () => {
         <div className="staggered-reveal">
           <Profiles />
         </div>
-        <div className="staggered-reveal pt-4">
+        {/* <div className="staggered-reveal pt-4">
           <Button href={`#${MENULINKS[4].ref}`} classes="link" type="primary">
             Let&apos;s Talk
           </Button>
-        </div>
+        </div> */}
       </div>
       <div
         className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
