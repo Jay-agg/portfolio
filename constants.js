@@ -33,14 +33,6 @@ export const MENULINKS = [
     name: "Projects",
     ref: "projects",
   },
-  {
-    name: "Work",
-    ref: "work",
-  },
-  {
-    name: "Contact",
-    ref: "contact",
-  },
 ];
 
 export const TYPED_STRINGS = [
