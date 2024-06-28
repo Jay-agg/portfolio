@@ -14,8 +14,7 @@ export const METADATA = {
     "Devfolio",
     "Folio",
   ].join(", "),
-  image:
-    "https://drive.google.com/file/d/1tdhQKNcAJpG5mLMKWAsJaWJTNTCFX3Yr/view?usp=sharing",
+
   language: "English",
   themeColor: "#000000",
 };

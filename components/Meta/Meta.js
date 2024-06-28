@@ -18,7 +18,7 @@ const Meta = () => (
     <meta property="og:type" content="website" />
     <meta property="og:title" content={METADATA.title} />
     <meta property="og:description" content={METADATA.description} />
-    <meta property="og:image" content={METADATA.image} />
+    {/* <meta property="og:image" content={METADATA.image} /> */}
     <meta property="og:url" content={METADATA.siteUrl} />
     <meta property="og:site_name" content={METADATA.title} />
 
@@ -29,9 +29,9 @@ const Meta = () => (
     <meta property="twitter:site" content={METADATA.twitterHandle} />
     <meta name="twitter:creator" content={METADATA.twitterHandle} />
     <meta property="twitter:url" content={METADATA.siteUrl} />
-    <meta property="twitter:image" content={METADATA.image} />
+    {/* <meta property="twitter:image" content={METADATA.image} /> */}
 
-    <link
+    {/* <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/favicons/apple-touch-icon.png"
@@ -47,7 +47,7 @@ const Meta = () => (
       type="image/png"
       sizes="16x16"
       href="/favicons/favicon-16x16.png"
-    />
+    /> */}
     <meta name="msapplication-TileColor" content="#7000FF" />
     <link rel="manifest" href="/manifest.json" />
   </Head>
