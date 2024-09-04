@@ -110,7 +110,7 @@ export const PROJECTS = [
     description: "AI powered mock interview application",
     gradient: ["#000066", "#6699FF"],
     url: "https://aceyourinterview.vercel.app/",
-    tech: ["react", "shadcn", "javascript"],
+    tech: ["react", "shadcn", "javascript", "next"],
   },
 
   {
@@ -120,7 +120,7 @@ export const PROJECTS = [
     description: "Netflix clone with AI integration",
     gradient: ["#F14658", "#DC2537"],
     url: "https://netflixgpt-ten.vercel.app/",
-    tech: ["react", "redux", "tailwindcss"],
+    tech: ["react", "redux", "tailwindcss", "firebase"],
   },
   {
     name: "FoodVilla",
