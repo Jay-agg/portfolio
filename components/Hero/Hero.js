@@ -83,9 +83,9 @@ const Hero = () => {
         </h5>
         <h1 className={`${styles.heroName} text-white text-6xl font-semibold`}>
           <span className={`relative ${styles.emphasize} staggered-reveal`}>
-            Noushad
+            Jayant
           </span>
-          <span className="staggered-reveal"> K U</span>
+          <span className="staggered-reveal"> Aggarwal</span>
         </h1>
         <p>
           <span
