@@ -4,9 +4,9 @@ export const METADATA = {
   description:
     "Jayant Aggarwal is a passionate Frontend Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
   siteUrl: "https://jayantaggarwal.vercel.app/",
-  twitterHandle: "@jayantftx",
+  twitterHandle: "@noushad_ku",
   keywords: [
-    "Jayant Aggarwal",
+    "Noushad K U",
     "Full Stack Engineer",
     "React Developer",
     "Software Engineer",
@@ -15,8 +15,8 @@ export const METADATA = {
     "Folio",
   ].join(", "),
 
-  image:
-    "https://res.cloudinary.com/de6jcj5yx/image/upload/v1719612964/ztmgacaqf6i32ppjx5eb.png",
+  // image:
+  //   "https://res.cloudinary.com/de6jcj5yx/image/upload/v1719612964/ztmgacaqf6i32ppjx5eb.png",
 
   language: "English",
   themeColor: "#000000",
@@ -50,23 +50,27 @@ export const TYPED_STRINGS = [
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: jayantaggarwal021@gmail.com",
+    url: "mailto: noushadknsd@gmail.com",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/jayant-aggarwal-418910248/",
+    url: "https://www.linkedin.com/in/noushad-ku",
   },
-  {
-    name: "github",
-    url: "https://github.com/Jay-agg",
-  },
+  // {
+  //   name: "github",
+  //   url: "",
+  // },
   {
     name: "instagram",
-    url: "https://www.instagram.com/jayantaggarwall/",
+    url: "https://www.instagram.com/prince_of_lens",
   },
   {
     name: "twitter",
-    url: "https://x.com/jayantftx",
+    url: "https://x.com/noushad_ku",
+  },
+  {
+    name: "facebook",
+    url: "https://www.facebook.com/share/6EQnYH5vVmteqS2d/?mibextid=qi2Omg",
   },
 ];
 
