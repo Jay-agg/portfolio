@@ -1,0 +1,228 @@
+/* Floating Action Buttons Container */
+.fabContainer {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+
+  @media (max-width: 768px) {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* Entry Animation */
+.fabContainerEnter {
+  animation: fabContainerSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Exit Animation */
+.fabContainerExit {
+  animation: fabContainerSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* FAB Group Container */
+.fabGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  @media (max-width: 480px) {
+    gap: 0.75rem;
+  }
+}
+
+/* Individual FAB Button */
+.fabButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  opacity: 0;
+  transform: translateX(100px) scale(0.8);
+  
+  @media (max-width: 768px) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media (max-width: 480px) {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Ensure hover and active states work after animation */
+  &.animated {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  &:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.95);
+  }
+
+  /* Icon styling */
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease;
+
+    @media (max-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 480px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+/* Email Button Styling */
+.emailButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Resume Button Styling */
+.resumeButton {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #e084e9 0%, #e3455a 100%);
+    
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Container Animations */
+@keyframes fabContainerSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fabContainerSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+/* Button Entry Animation with staggered timing */
+.fabContainerEnter .fabButton:nth-child(1) {
+  animation: fabButtonSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+.fabContainerEnter .fabButton:nth-child(2) {
+  animation: fabButtonSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+}
+
+/* Button Exit Animation */
+.fabContainerExit .fabButton {
+  animation: fabButtonSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Button Keyframes */
+@keyframes fabButtonSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(80px) scale(0.8);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateX(-10px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+
+@keyframes fabButtonSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(80px) scale(0.8);
+  }
+}
+
+/* Pulse animation for attention */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 0 0 8px rgba(102, 126, 234, 0.1);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Optional: Add pulse animation to email button periodically */
+.fabContainerEnter .emailButton:nth-child(1) {
+  animation: fabButtonSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards, pulse 3s infinite 2.5s;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .fabButton {
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .fabButton {
+    animation: none;
+    transition: none;
+  }
+  
+  .fabButton:hover {
+    transform: none;
+  }
+}

@@ -15,6 +15,7 @@ import Work from "@/components/Work/Work";
 import Collaboration from "@/components/Collaboration/Collaboration";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
+import FloatingActionButtons from "@/components/FloatingActionButtons/FloatingActionButtons";
 import { displayFancyLogs } from "utils/log";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -69,12 +70,13 @@ export default function Home() {
             <Hero />
             <About1 clientHeight={clientHeight} />
             <Skills />
+            <Work isDesktop={isDesktop} />
             <About2 clientHeight={clientHeight} />
             <Projects isDesktop={isDesktop} clientHeight={clientHeight} />
-            <Work isDesktop={isDesktop} />
             <Collaboration clientHeight={clientHeight} />
             {/* <Contact /> */}
           </main>
+          <FloatingActionButtons />
           <Footer />
         </>
       )}

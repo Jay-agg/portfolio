@@ -96,11 +96,14 @@ const Hero = () => {
         <div className="staggered-reveal">
           <Profiles />
         </div>
-        {/* <div className="staggered-reveal pt-4">
-          <Button href={`#${MENULINKS[4].ref}`} classes="link" type="primary">
-            Let&apos;s Talk
+        <div className="staggered-reveal pt-4 gap-4 flex">
+          <Button href={`https://drive.google.com/file/d/1W_Qy6ONatZXHNb2D9kvdpc6B1sRb7k2u/view?usp=drive_link`} classes="link" type="primary">
+             My Resume
           </Button>
-        </div> */}
+          <Button href={`mailto: jayantaggarwal021@gmail.com`} classes="link" type="primary">
+             Let's Talk!
+          </Button>
+        </div>
       </div>
       <div
         className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"

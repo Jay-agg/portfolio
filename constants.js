@@ -42,9 +42,11 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "A pragmatic Frontend Developer",
-  "I build things for the web",
-  "I create aesthetic and modern apps",
+  "Engineering high-performance apps",
+  "Enhancing scalability with Kubernetes",
+  "I design event-driven systems with Kafka",
+  "I create GenAI workflows using Python & LangChain",
+  "Turning ideas into production-ready apps",
 ];
 
 export const SOCIAL_LINKS = [
@@ -61,12 +63,12 @@ export const SOCIAL_LINKS = [
     url: "https://github.com/Jay-agg",
   },
   {
-    name: "instagram",
-    url: "https://www.instagram.com/jayantaggarwall/",
-  },
-  {
     name: "twitter",
     url: "https://x.com/jayantftx",
+  },
+  {
+    name: "instagram",
+    url: "https://www.instagram.com/jayantaggarwall/",
   },
 ];
 
@@ -76,11 +78,10 @@ export const SKILLS = {
     "css",
     "javascript",
     "typescript",
-    "sass",
     "nodejs",
-    "webpack",
-    "vite",
-    "firebase",
+    "python",
+    "golang",
+    "langchain",
   ],
   librariesAndFrameworks: [
     "react",
@@ -90,7 +91,7 @@ export const SKILLS = {
     "styledcomponents",
   ],
   databases: ["mysql", "mongodb"],
-  other: ["git"],
+  devops: ["git", "aws", "docker", "kubernetes", "kafka", "firebase"],
 };
 
 export const PROJECTS = [
@@ -150,18 +151,30 @@ export const PROJECTS = [
 // ];
 
 export const WORK_CONTENTS = {
+  SNIPE: [
+    {
+      title: "Snipe",
+      description:
+        "Created immersive web games for SoapCentral by SportsKeeda with 10,000+ daily active users. Led platform development of LXP Core, adopted by 100+ schools with 98% uptime. Built using Next.js, TypeScript, Firebase, and React Query while collaborating closely with distributed teams.",
+      content: (
+        <div className="h-full w-full flex items-center justify-center text-white px-4">
+          SDE Intern
+        </div>
+      ),
+    },
+  ],
   M2R: [
     {
       title: "M2R Technomations LLP",
       description:
-        "Led creation of a HRMS platform for a UK based client. Fixed 50+ Bugs in the pre existing codebase. Collaborated with backend engineers to integrate REST api in the project.",
+        "Developed a Human Resource Management System (HRMS) that streamlined onboarding for 10+ hires. Resolved 50+ bugs, enhancing performance and stability. Integrated RESTful APIs with backend engineers, improving data retrieval speed by 30% and ensuring seamless data flow.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer Intern
+          Frontend Development Intern
         </div>
       ),
     },
   ],
 };
 
-export const GTAG = "G-5HCTL2TJ5W";
+

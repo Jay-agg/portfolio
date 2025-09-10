@@ -109,10 +109,10 @@ const Skills = () => {
             </div>
             <div className="staggered-reveal">
               <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4">
-                Other
+                DevOps
               </h3>
               <div className="flex flex-wrap gap-6 transform-gpu">
-                {SKILLS.other.map((skill) => (
+                {SKILLS.devops.map((skill) => (
                   <Image
                     key={skill}
                     src={`/skills/${skill}.svg`}
