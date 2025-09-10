@@ -101,7 +101,7 @@ const Hero = () => {
              My Resume
           </Button>
           <Button href={`mailto: jayantaggarwal021@gmail.com`} classes="link" type="primary">
-             Let's Talk!
+             Let&apos;s Talk!
           </Button>
         </div>
       </div>
